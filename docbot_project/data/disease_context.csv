@@ -1,0 +1,90 @@
+Disease,Context
+Acne,"Occurs when hair follicles get plugged with oil and dead skin cells, often triggered by hormonal changes and bacterial growth."
+Anemia,"Results from a deficiency in red blood cells or hemoglobin, commonly due to iron deficiency, chronic disease, or blood loss."
+Appendicitis,"Caused by inflammation of the appendix, often due to blockage by stool or infection."
+Asthma,"A chronic respiratory condition where airways narrow and swell in response to allergens, irritation, or exercise."
+Breast Cancer,Develops from genetic mutations and hormonal influences that cause uncontrolled breast cell growth.
+Bronchitis,"Occurs when bronchial tubes become inflamed, typically after a viral infection or exposure to pollutants or smoke."
+COVID‑19,"An infectious disease caused by SARS‑CoV‑2, transmitted through respiratory droplets."
+Cervical Cancer,Usually caused by persistent infection with high-risk human papillomavirus (HPV) strains.
+Chickenpox,"A contagious viral infection caused by varicella‑zoster virus, transmitted via respiratory droplets."
+Chikungunya,A mosquito-borne viral illness characterized by fever and severe joint pain.
+Chlamydia,A sexually transmitted infection caused by the bacterium Chlamydia trachomatis.
+Crohn's Disease,A chronic inflammatory bowel disease due to immune system attacking intestinal lining.
+Dengue,"A viral infection transmitted by Aedes mosquitoes, causing fever and severe joint pain."
+Depression,"A mood disorder triggered by imbalances in neurotransmitters, genetics, and stressors."
+Diabetes,A metabolic disease where the body cannot regulate blood glucose due to insulin deficiency or resistance.
+Eczema,"A skin condition marked by itchy, inflamed patches caused by immune response to irritants or allergens."
+Endometriosis,"Occurs when uterine-like tissue grows outside the uterus, leading to pain and infertility."
+Epilepsy,A neurological disorder characterized by recurrent seizures due to abnormal brain electrical activity.
+Flu,An acute respiratory infection caused by influenza viruses spread by droplets.
+Gastroenteritis,"Inflammation of stomach and intestines, usually from viral or bacterial infection or foodborne illness."
+Glaucoma,A group of eye diseases that damage the optic nerve due to increased intraocular pressure.
+Gonorrhea,A sexually transmitted bacterial infection affecting mucous membranes.
+HIV/AIDS,"A progressive immune system disease caused by HIV, transmitted via blood, sex, or perinatal exposure."
+Heart Attack,"Occurs when blood flow to heart muscle is blocked, often by clot in the coronary arteries."
+Hepatitis B,"A liver infection caused by hepatitis B virus, spread through bodily fluids."
+Hypertension,"High blood pressure often caused by genetic, dietary, and lifestyle factors."
+Hyperthyroidism,"Excessive thyroid hormone production, often due to autoimmune disorders like Graves’ disease."
+Hypothyroidism,"Insufficient thyroid hormone production, commonly from autoimmune disease (Hashimoto’s)."
+Kidney Stones,Formed when mineral crystals accumulate in kidneys due to dehydration or metabolic factors.
+Leukemia,A cancer of white blood cells causing uncontrolled proliferation in bone marrow.
+Liver Cirrhosis,Scarring of the liver tissue due to chronic alcohol use or hepatitis infections.
+Lung Cancer,"Cancerous growth in lung tissues, often associated with smoking and environmental exposures."
+Lymphoma,"Cancer of the lymphatic system, caused by abnormal lymphocyte proliferation."
+Malaria,A parasitic infection transmitted by Anopheles mosquitoes affecting red blood cells.
+Measles,"A highly contagious viral disease causing fever and rash, spread via droplets."
+Melanoma,"A dangerous form of skin cancer arising from melanocytes, often due to UV exposure."
+Migraine,A neurological headache disorder often triggered by hormonal or environmental factors.
+Monkeypox,"A viral zoonotic disease similar to smallpox, transmitted via close contact."
+Multiple Sclerosis,An autoimmune disorder where immune cells attack nerve cell insulation (myelin).
+Mumps,"A viral infection that typically affects salivary glands, transmitted via droplets."
+Ovarian Cancer,"Malignancy of ovarian tissue, often detected late due to vague symptoms."
+PCOS,"A hormonal disorder causing ovarian cysts, insulin resistance, and irregular cycles."
+Pancreatitis,Inflammation of the pancreas often due to gallstones or heavy alcohol use.
+Parkinson's Disease,A neurodegenerative disorder characterized by loss of dopamine-producing brain cells.
+Peptic Ulcer,"Open sores on lining of stomach or small intestine, often from H. pylori or NSAID use."
+Piles,Swollen veins in the rectum/anus due to increased pressure from constipation or pregnancy.
+Pneumonia,"Infection of the lungs caused by bacteria, viruses, or fungi."
+Prostate Cancer,"Cancer of the prostate gland, influenced by age and hormonal factors."
+Psoriasis,An autoimmune skin disease characterized by rapid skin cell turnover and scaling.
+Rabies,A viral disease transmitted by animal bites that attacks the nervous system.
+Respiratory Infection,Infection of upper/lower airways by bacteria or viruses.
+Sinusitis,Inflammation of sinus cavities often due to infection or allergies.
+Skin Infection,"Infection of skin tissue caused by bacteria, viruses, or fungi."
+Stroke,Occurs when blood supply to part of brain is interrupted by blockage or hemorrhage.
+Syphilis,A bacterial infection transmitted sexually causing multisystem disease.
+Testicular Cancer,"Cancer arising in testicles, often due to genetic or environmental factors."
+Thyroid Cancer,"Malignancy of thyroid gland cells, sometimes linked to radiation exposure."
+Tuberculosis,A chronic lung infection caused by Mycobacterium tuberculosis.
+Typhoid,"A systemic infection caused by Salmonella typhi, spread via contaminated food/water."
+UTI,Infection of urinary tract typically caused by E. coli bacteria.
+Ulcerative Colitis,An inflammatory bowel disease causing ulcers in colon lining.
+Zika Virus,"A mosquito-transmitted virus causing mild fever, rash, and birth defects if pregnant."
+Fungal infection,Overgrowth of fungi on skin or mucous membranes due to immune imbalance.
+Allergy,Immune system overreaction to harmless substances like pollen or food proteins.
+GERD,"Occurs when stomach acid refluxes into esophagus, causing irritation."
+Chronic cholestasis,"A liver condition with impaired bile flow, often due to liver or bile duct disease."
+Drug Reaction,Adverse reaction occurs when body reacts negatively to medications.
+Peptic ulcer disease,Ulcers in stomach or duodenum from H. pylori infection or NSAID use.
+AIDS,Advanced stage of HIV infection with severely weakened immunity.
+Bronchial Asthma,Same as asthma—chronic airway inflammation triggered by allergens.
+Cervical spondylosis,"Age-related wear affecting spinal disks in neck, causing pain & stiffness."
+Paralysis (brain hemorrhage),Loss of muscle function due to bleeding in the brain.
+Jaundice,Yellowing of skin and eyes due to high bilirubin from liver dysfunction.
+Chicken pox,Same as Chickenpox (varicella-zoster virus infection).
+Hepatitis A,"Liver infection caused by hepatitis A virus, typically from contaminated food/water."
+Hepatitis C,"Liver disease caused by hepatitis C virus, often from blood contact."
+Hepatitis D,"Occurs only with hepatitis B coinfection, transmitted via body fluids."
+Hepatitis E,A viral liver infection spread via contaminated water.
+Alcoholic hepatitis,Inflammation of liver from excessive alcohol use.
+Common Cold,"Caused by rhinovirus or other viruses, leading to upper respiratory symptoms."
+Dimorphic hemorrhoids (piles),Inflammation of anal veins from straining or constipation.
+Heart attack,Same as Heart Attack—myocardial infarction due to blocked coronary arteries.
+Varicose veins,Swollen veins caused by weakened valves in leg veins.
+Hypoglycemia,Low blood sugar due to skipping meals or excessive insulin/medication.
+Osteoarthritis,Degenerative joint disease from wear-and-tear on cartilage.
+Arthritis,Inflammation of joints caused by autoimmune or degenerative disorders.
+(vertigo) Paroxysmal Positional Vertigo,Inner ear disorder causing brief episodes of vertigo with head movements.
+Urinary tract infection,"Bacterial infection of urethra, bladder, or kidney."
+Impetigo,Contagious skin infection caused by Staphylococcus or Streptococcus bacteria.

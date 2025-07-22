@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DocBOT - AI Symptom Checker</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!-- AOS Scroll Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="card" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+        <h1 {% if confidence >= 30 %}data-aos="fade"{% endif %}>DocBot - AI Medical Assistant</h1>
+
+        <form method="post" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-buttons">
+                <button type="submit">Analyze Symptoms</button>
+                <a href="/" class="clear-btn">Clear</a>
+            </div>
+        </form>
+
+        {% if error %}
+            <div class="alert error" {% if confidence >= 30 %}data-aos="fade"{% endif %}>{{ error }}</div>
+        {% endif %}
+
+        {% if final_symptoms %}
+            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+                <h3> Recognized Symptoms</h3>
+                <p>{{ final_symptoms|join:", " }}</p>
+            </div>
+        {% endif %}
+
+        {% if label %}
+            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+                <h3> Predicted Condition</h3>
+                <p><strong>{{ label }}</strong> (Confidence: {{ confidence }}%)</p>
+            </div>
+        {% endif %}
+
+        {% if top_predictions and confidence >= 30 %}
+            <div class="section" data-aos="fade">
+                <h3> Top Predictions</h3>
+                <div class="healthbars">
+                    {% for disease, prob in top_predictions %}
+                        {% with "#006666" as color %}
+                            <div class="bar-wrapper">
+                                <div class="label">{{ disease }}</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill"
+                                         style="width: {{ prob }}%; background-color: {{ color }};">
+                                        {{ prob|floatformat:1 }}%
+                                    </div>
+                                </div>
+                            </div>
+                        {% endwith %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+        {% if disease_info %}
+            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+                <h3> Condition Info & Recommendations</h3>
+                <p><strong>Context:</strong> {{ disease_info.Context }}</p>
+                <p><strong>Drugs:</strong> {{ disease_info.Drugs }}</p>
+                <p><strong>Supplements:</strong> {{ disease_info.Supplements }}</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+    // Animate bar widths only on load
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            const width = bar.style.width;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 100);
+        });
+    });
+</script>
+
+<!-- AOS Scroll Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 400,
+        offset: 40,
+        once: true,
+        easing: 'ease-in-out'
+    });
+</script>
+</body>
+</html>

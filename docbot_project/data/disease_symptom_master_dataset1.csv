@@ -1,0 +1,299 @@
+Disease,Symptom
+Respiratory Infection,cough
+Respiratory Infection,sore throat
+Respiratory Infection,runny nose
+Respiratory Infection,fever
+Respiratory Infection,nasal congestion
+Migraine,headache
+Migraine,nausea
+Migraine,vomiting
+Migraine,photophobia
+Migraine,blurred vision
+COVID-19,fever
+COVID-19,dry cough
+COVID-19,fatigue
+COVID-19,loss of taste
+COVID-19,loss of smell
+UTI,painful urination
+UTI,frequent urination
+UTI,abdominal pain
+UTI,burning sensation
+Anemia,fatigue
+Anemia,weakness
+Anemia,dizziness
+Anemia,pale skin
+Anemia,shortness of breath
+Gastroenteritis,nausea
+Gastroenteritis,vomiting
+Gastroenteritis,diarrhea
+Gastroenteritis,abdominal pain
+Gastroenteritis,fever
+Flu,fever
+Flu,chills
+Flu,sore throat
+Flu,body aches
+Flu,cough
+Skin Infection,rash
+Skin Infection,itching
+Skin Infection,blisters
+Skin Infection,redness
+Skin Infection,swelling
+Depression,fatigue
+Depression,sleep disturbance
+Depression,depression
+Depression,anhedonia
+Depression,mood swings
+Tuberculosis,persistent cough
+Tuberculosis,weight loss
+Tuberculosis,fever
+Tuberculosis,night sweats
+Tuberculosis,chest pain
+Diabetes,excessive thirst
+Diabetes,frequent urination
+Diabetes,blurred vision
+Diabetes,fatigue
+Diabetes,weight loss
+Asthma,shortness of breath
+Asthma,wheezing
+Asthma,chest tightness
+Asthma,cough
+Hypertension,headache
+Hypertension,chest pain
+Hypertension,vision problems
+Hypertension,fatigue
+Hypertension,irregular heartbeat
+Heart Attack,chest pain
+Heart Attack,shortness of breath
+Heart Attack,nausea
+Heart Attack,left arm pain
+Heart Attack,sweating
+HIV/AIDS,fever
+HIV/AIDS,weight loss
+HIV/AIDS,fatigue
+HIV/AIDS,night sweats
+HIV/AIDS,lymph node swelling
+Syphilis,genital sores
+Syphilis,rash
+Syphilis,fever
+Syphilis,fatigue
+Syphilis,swollen lymph nodes
+Gonorrhea,painful urination
+Gonorrhea,genital discharge
+Gonorrhea,pelvic pain
+Gonorrhea,bleeding between periods
+Chlamydia,painful urination
+Chlamydia,genital discharge
+Chlamydia,abdominal pain
+Chlamydia,testicular pain
+Cervical Cancer,abnormal vaginal bleeding
+Cervical Cancer,pelvic pain
+Cervical Cancer,pain during intercourse
+Cervical Cancer,vaginal discharge
+Lung Cancer,persistent cough
+Lung Cancer,chest pain
+Lung Cancer,shortness of breath
+Lung Cancer,weight loss
+Lung Cancer,coughing blood
+Breast Cancer,breast lump
+Breast Cancer,nipple discharge
+Breast Cancer,skin dimpling
+Breast Cancer,breast pain
+Breast Cancer,redness of breast
+Prostate Cancer,frequent urination
+Prostate Cancer,difficulty urinating
+Prostate Cancer,pelvic pain
+Prostate Cancer,blood in urine
+Appendicitis,abdominal pain
+Appendicitis,loss of appetite
+Appendicitis,nausea
+Appendicitis,vomiting
+Appendicitis,fever
+Pancreatitis,abdominal pain
+Pancreatitis,nausea
+Pancreatitis,vomiting
+Pancreatitis,fever
+Pancreatitis,rapid pulse
+Pneumonia,cough
+Pneumonia,fever
+Pneumonia,chest pain
+Pneumonia,shortness of breath
+Pneumonia,fatigue
+Bronchitis,cough
+Bronchitis,sputum
+Bronchitis,chest discomfort
+Bronchitis,fatigue
+Bronchitis,slight fever
+Sinusitis,facial pain
+Sinusitis,nasal congestion
+Sinusitis,headache
+Sinusitis,runny nose
+Sinusitis,fever
+Epilepsy,seizures
+Epilepsy,confusion
+Epilepsy,loss of consciousness
+Epilepsy,muscle stiffness
+Parkinson's Disease,tremor
+Parkinson's Disease,muscle stiffness
+Parkinson's Disease,balance problems
+Parkinson's Disease,slow movement
+Multiple Sclerosis,numbness
+Multiple Sclerosis,tingling
+Multiple Sclerosis,fatigue
+Multiple Sclerosis,vision loss
+Multiple Sclerosis,muscle weakness
+Stroke,numbness
+Stroke,speech difficulty
+Stroke,confusion
+Stroke,blurred vision
+Stroke,loss of balance
+Liver Cirrhosis,jaundice
+Liver Cirrhosis,fatigue
+Liver Cirrhosis,easy bruising
+Liver Cirrhosis,swelling
+Liver Cirrhosis,itching
+Hepatitis B,jaundice
+Hepatitis B,fatigue
+Hepatitis B,abdominal pain
+Hepatitis B,nausea
+Hepatitis B,dark urine
+Crohn's Disease,abdominal pain
+Crohn's Disease,diarrhea
+Crohn's Disease,fatigue
+Crohn's Disease,weight loss
+Crohn's Disease,fever
+Ulcerative Colitis,bloody stool
+Ulcerative Colitis,abdominal pain
+Ulcerative Colitis,diarrhea
+Ulcerative Colitis,fatigue
+Ulcerative Colitis,weight loss
+Peptic Ulcer,abdominal pain
+Peptic Ulcer,bloating
+Peptic Ulcer,nausea
+Peptic Ulcer,vomiting
+Peptic Ulcer,indigestion
+Psoriasis,scaly patches
+Psoriasis,itching
+Psoriasis,dry skin
+Psoriasis,skin redness
+Psoriasis,joint pain
+Eczema,itching
+Eczema,red rash
+Eczema,dry skin
+Eczema,blisters
+Eczema,cracked skin
+Acne,pimples
+Acne,blackheads
+Acne,whiteheads
+Acne,scars
+Acne,redness
+Melanoma,new mole
+Melanoma,mole change
+Melanoma,skin discoloration
+Melanoma,bleeding mole
+Melanoma,itchy lesion
+Leukemia,fatigue
+Leukemia,fever
+Leukemia,easy bruising
+Leukemia,weight loss
+Leukemia,frequent infections
+Lymphoma,swollen lymph nodes
+Lymphoma,fatigue
+Lymphoma,fever
+Lymphoma,night sweats
+Lymphoma,weight loss
+Thyroid Cancer,neck lump
+Thyroid Cancer,hoarseness
+Thyroid Cancer,difficulty swallowing
+Thyroid Cancer,swollen glands
+Hyperthyroidism,weight loss
+Hyperthyroidism,heat intolerance
+Hyperthyroidism,tremor
+Hyperthyroidism,anxiety
+Hyperthyroidism,palpitations
+Hypothyroidism,fatigue
+Hypothyroidism,cold intolerance
+Hypothyroidism,weight gain
+Hypothyroidism,depression
+Hypothyroidism,constipation
+PCOS,irregular periods
+PCOS,weight gain
+PCOS,acne
+PCOS,hair loss
+PCOS,infertility
+Endometriosis,pelvic pain
+Endometriosis,heavy periods
+Endometriosis,pain during intercourse
+Endometriosis,infertility
+Ovarian Cancer,abdominal bloating
+Ovarian Cancer,pelvic pain
+Ovarian Cancer,urinary urgency
+Ovarian Cancer,loss of appetite
+Testicular Cancer,testicular lump
+Testicular Cancer,scrotal pain
+Testicular Cancer,heaviness in scrotum
+Testicular Cancer,back pain
+Dengue,high fever
+Dengue,rash
+Dengue,joint pain
+Dengue,muscle pain
+Dengue,bleeding
+Malaria,fever
+Malaria,chills
+Malaria,sweating
+Malaria,nausea
+Malaria,headache
+Typhoid,high fever
+Typhoid,abdominal pain
+Typhoid,rash
+Typhoid,constipation
+Typhoid,fatigue
+Chickenpox,fever
+Chickenpox,rash
+Chickenpox,itching
+Chickenpox,fatigue
+Chickenpox,loss of appetite
+Measles,rash
+Measles,fever
+Measles,cough
+Measles,conjunctivitis
+Measles,runny nose
+Mumps,swollen glands
+Mumps,fever
+Mumps,muscle aches
+Mumps,fatigue
+Mumps,loss of appetite
+Rabies,hydrophobia
+Rabies,agitation
+Rabies,fever
+Rabies,confusion
+Rabies,seizures
+Zika Virus,rash
+Zika Virus,fever
+Zika Virus,joint pain
+Zika Virus,red eyes
+Zika Virus,muscle pain
+Chikungunya,joint pain
+Chikungunya,rash
+Chikungunya,fever
+Chikungunya,muscle pain
+Chikungunya,fatigue
+Monkeypox,rash
+Monkeypox,fever
+Monkeypox,lymphadenopathy
+Monkeypox,muscle aches
+Monkeypox,fatigue
+Piles,rectal bleeding
+Piles,pain during defecation
+Piles,itching
+Piles,swelling
+Piles,constipation
+Kidney Stones,flank pain
+Kidney Stones,blood in urine
+Kidney Stones,nausea
+Kidney Stones,vomiting
+Kidney Stones,frequent urination
+Glaucoma,blurred vision
+Glaucoma,eye pain
+Glaucoma,halo vision
+Glaucoma,nausea
+Glaucoma,red eye
