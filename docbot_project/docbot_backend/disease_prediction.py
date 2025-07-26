@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 from docbot_backend.labels import label_mapping
 
-df = pd.read_csv("C:/Users/Kumar Abhinav/Desktop/Codings/docbot_project/data/ready_dataset.csv")
+df = pd.read_csv("ready_dataset.csv")
 df['label'] = df['label'].replace(label_mapping)
 
 # Declaring targets
