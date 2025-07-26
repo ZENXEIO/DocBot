@@ -4,7 +4,7 @@ import difflib
 from docbot_backend.symptoms import symptom_vocab
 
 
-os.environ["GEMINI_API_KEY"] = "AIzaSyDBKa6VG-6euP_X2zMjxF3UgOnIIRs45ek"
+os.environ["GEMINI_API_KEY"] = ""
 print("API key environment variable set for this session.")
 
 import google.generativeai as genai
