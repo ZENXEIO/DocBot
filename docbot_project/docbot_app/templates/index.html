@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <title>DocBOT - AI Symptom Checker</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
-
-    <!-- AOS Scroll Animation Library -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <div class="card" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
-        <h1 {% if confidence >= 30 %}data-aos="fade"{% endif %}>DocBot - AI Medical Assistant</h1>
+    <div class="card" {% if animate %}data-aos="fade"{% endif %}>
+        <h1 {% if animate %}data-aos="fade"{% endif %}>DocBot - AI Medical Assistant</h1>
 
-        <form method="post" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
+        <form method="post" {% if animate %}data-aos="fade"{% endif %}>
             {% csrf_token %}
             {{ form.as_p }}
+            <p class="hint"> Enter at least <strong>4 symptoms</strong> for best results.</p>
             <div class="form-buttons">
                 <button type="submit">Analyze Symptoms</button>
                 <a href="/" class="clear-btn">Clear</a>
@@ -24,50 +23,52 @@
         </form>
 
         {% if error %}
-            <div class="alert error" {% if confidence >= 30 %}data-aos="fade"{% endif %}>{{ error }}</div>
+            <div class="alert error" {% if animate %}data-aos="fade"{% endif %}>{{ error }}</div>
         {% endif %}
 
         {% if final_symptoms %}
-            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
-                <h3> Recognized Symptoms</h3>
+            <div class="section" {% if animate %}data-aos="fade"{% endif %}>
+                <h3>Recognized Symptoms</h3>
                 <p>{{ final_symptoms|join:", " }}</p>
             </div>
         {% endif %}
 
         {% if label %}
-            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
-                <h3> Predicted Condition</h3>
-                <p><strong>{{ label }}</strong> (Confidence: {{ confidence }}%)</p>
+            <div class="section" {% if animate %}data-aos="fade"{% endif %}>
+                <h3>Predicted Condition</h3>
+                <p>
+                    <strong>{{ label }}</strong>
+                    {% if confidence %}(Confidence: {{ confidence }}%){% endif %}
+                </p>
             </div>
         {% endif %}
 
-        {% if top_predictions and confidence >= 30 %}
-            <div class="section" data-aos="fade">
-                <h3> Top Predictions</h3>
+        {% if top_predictions %}
+            <div class="section" {% if animate %}data-aos="fade"{% endif %}>
+                <h3>Top Predictions</h3>
                 <div class="healthbars">
                     {% for disease, prob in top_predictions %}
-                        {% with "#006666" as color %}
-                            <div class="bar-wrapper">
-                                <div class="label">{{ disease }}</div>
-                                <div class="bar-container">
-                                    <div class="bar-fill"
-                                         style="width: {{ prob }}%; background-color: {{ color }};">
-                                        {{ prob|floatformat:1 }}%
-                                    </div>
+                        <div class="bar-wrapper">
+                            <div class="label">{{ disease }}</div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: {{ prob }}%; background-color: #006666;">
+                                    {{ prob }}%
                                 </div>
                             </div>
-                        {% endwith %}
+                        </div>
+                    {% empty %}
+                        <p>No predictions available.</p>
                     {% endfor %}
                 </div>
             </div>
         {% endif %}
 
         {% if disease_info %}
-            <div class="section" {% if confidence >= 30 %}data-aos="fade"{% endif %}>
-                <h3> Condition Info & Recommendations</h3>
-                <p><strong>Context:</strong> {{ disease_info.Context }}</p>
-                <p><strong>Drugs:</strong> {{ disease_info.Drugs }}</p>
-                <p><strong>Supplements:</strong> {{ disease_info.Supplements }}</p>
+            <div class="section" {% if animate %}data-aos="fade"{% endif %}>
+                <h3>Condition Info & Recommendations</h3>
+                {% if disease_info.Context %}<p><strong>Context:</strong> {{ disease_info.Context }}</p>{% endif %}
+                {% if disease_info.Drugs %}<p><strong>Drugs:</strong> {{ disease_info.Drugs }}</p>{% endif %}
+                {% if disease_info.Supplements %}<p><strong>Supplements:</strong> {{ disease_info.Supplements }}</p>{% endif %}
             </div>
         {% endif %}
     </div>
@@ -79,22 +80,14 @@
         document.querySelectorAll('.bar-fill').forEach(bar => {
             const width = bar.style.width;
             bar.style.width = '0%';
-            setTimeout(() => {
-                bar.style.width = width;
-            }, 100);
+            setTimeout(() => { bar.style.width = width; }, 100);
         });
     });
 </script>
 
-<!-- AOS Scroll Animation Script -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 400,
-        offset: 40,
-        once: true,
-        easing: 'ease-in-out'
-    });
+    AOS.init({ duration: 400, offset: 40, once: true, easing: 'ease-in-out' });
 </script>
 </body>
 </html>

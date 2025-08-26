@@ -2,7 +2,8 @@ from django.shortcuts import render
 from docbot_app.forms import SymptomForm
 from docbot_backend import nlp_parser as np
 from docbot_backend.symptoms import symptom_vocab
-from docbot_backend import disease_prediction as dp
+#from docbot_backend import disease_prediction as dp
+from docbot_backend import powerai as dp
 from docbot_backend import drug_recommender as dr
 
 def home(request):

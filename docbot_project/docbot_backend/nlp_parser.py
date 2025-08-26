@@ -4,11 +4,11 @@ import difflib
 from docbot_backend.symptoms import symptom_vocab
 
 
-os.environ["GEMINI_API_KEY"] = ""
+os.environ["GEMINI_API_KEY"] = "AIzaSyDBKa6VG-6euP_X2zMjxF3UgOnIIRs45ek"
 print("API key environment variable set for this session.")
 
 import google.generativeai as genai
-model = genai.GenerativeModel("gemma-3-4b-it") # BETA VERSION OF AI
+model = genai.GenerativeModel("gemini-2.0-flash-lite") # BETA VERSION OF AI
 
 def fuzzy_match(symptoms, vocab, cutoff=0.8):
     matched = []

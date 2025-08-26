@@ -1,8 +1,8 @@
 import pandas as pd
 
-df1 = pd.read_csv('disease_drugs_dataset.csv')
+df1 = pd.read_csv('E:/My Things/Working Projects/docbot_project/data/disease_drugs_dataset.csv')
 df1 = df1.drop("SideEffects", axis=1)
-df2 = pd.read_csv("disease_context.csv")
+df2 = pd.read_csv("E:/My Things/Working Projects/docbot_project/data/disease_context.csv")
 df1['Context'] = df2['Context']
 df1 = df1.fillna('No Data yet')
 df1["Disease"] = df1["Disease"].str.lower()

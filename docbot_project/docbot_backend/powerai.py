@@ -1,58 +1,3 @@
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
-from docbot_backend.labels import label_mapping
-
-
-df = pd.read_csv("E:/My Things/Working Projects/docbot_project/data/ready_dataset.csv")
-df['label'] = df['label'].replace(label_mapping)
-
-# Declaring targets
-X = df.drop(columns=['label'])
-y = df['label']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-svm_model = SVC(kernel='linear', probability=True, class_weight='balanced', random_state=42)
-svm_model.fit(X_train, y_train)
-
-rf_model = RandomForestClassifier(n_estimators=100, class_weight='balanced', random_state=42)
-rf_model.fit(X_train, y_train)
-
-knn_model = KNeighborsClassifier(n_neighbors=3)
-knn_model.fit(X_train, y_train)
-
-logreg_model = LogisticRegression(max_iter=1000, class_weight='balanced')
-logreg_model.fit(X_train, y_train)
-
-# --- Model predictions ---
-svm_probs = svm_model.predict_proba(X_test)
-rf_probs = rf_model.predict_proba(X_test)
-knn_probs = knn_model.predict_proba(X_test)
-logreg_probs = logreg_model.predict_proba(X_test)
-
-weights = {
-    'svm': 1.0,
-    'rf': 1.0,
-    'knn': 1.0,
-    'logreg': 0.8
-}
-
-total = sum(weights.values())
-
-ensemble_probs = (
-    svm_probs * weights['svm'] +
-    rf_probs * weights['rf'] +
-    knn_probs * weights['knn'] +
-    logreg_probs * weights['logreg']
-) / total
-
-common_classes = svm_model.classes_
-
 # docbot_backend/disease_prediction.py
 
 import os
@@ -169,7 +114,9 @@ def predict_disease(symptom_list: List[str]) -> Tuple[Optional[str], Optional[fl
         return None, None, None
 
     # sort by: final_score → match% → prevalence → alphabetical
-    scored.sort(key=lambda x: (x[1], x[2], x[3], x[0]), reverse=True)
+    
+    scored.sort(key=lambda x: (x[2], x[1], x[3]), reverse=True)
+
 
     top_label, top_score, _, _ = scored[0]
     top_list = [(d, round(s, 2)) for d, s, _, _ in scored]
